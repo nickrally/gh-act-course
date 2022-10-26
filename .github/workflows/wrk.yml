@@ -5,11 +5,11 @@ jobs:
     name: example
     runs-on: ubuntu-latest
     steps:
-      - run: echo "job triggered by a ${{ github.event_name }} event
+      - run: echo "job triggered by a ${{ github.event_name }} event"
       
-      - run: echo "running on ${{ runner.os }}
+      - run: echo "running on ${{ runner.os }}"
       
-      - run: echo "on branch ${{ github.ref }} in ${{ github.repository }} repo
+      - run: echo "on branch ${{ github.ref }} in ${{ github.repository }} repo"
       
       - name: check out code
         uses: actions/checkout@v2
