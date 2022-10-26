@@ -19,7 +19,7 @@ jobs:
       - run: echo "repo was copied to ${{ github.workspace }} on the runner"
       
       - name: conditional step
-        if: ${{ github.event_name == pull_request }} 
+        if: ${{ github.event_name == "pull_request" }} 
         run: echo "this is a pull request"
         
       - name: echo "list files in the repo"
